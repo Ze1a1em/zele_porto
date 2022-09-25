@@ -1,0 +1,477 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+   
+    <section class="bg-dark py-5">
+        <div class="container text-center text-white">
+            <div class="header-content ">
+                <h4 class="header-subtitle">Hello, I am</h4>
+                <h1 class="header-title text-success">Zelalem Smith</h1>
+                <h6 class="header-mono">A Fullstack Developer</h6>
+                <a href="#resume" class="btn btn-success btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</a>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">A Web Designer / Software Developer </h5>
+                <p class="mt-20">Besides what I do for work, I enjoy sports, beachs, and outdoor ativaties like camping. </p>
+                <button class="btn btn-outline-sutext-success"><i class="icon-down-circled2 "></i>Download My CV</button>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 06/14/1997</li>
+                    <li><span>Email</span> : zele713@gmail.com</li>
+                    <li><span>Phone</span> : + (123) 456-7890</li>
+                    <li><span>Skype</span> : zele_smith13 </li>
+                    <li><span>Address</span> : Jiga, Ethiopia.</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-success pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Front-end Development/h6>
+                        <p class="subtitle">Using CSS, HTML and Javascript I am able to design a resposive frontend webpage.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-success pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Back-end Software Designs</h6>
+                        <p class="subtitle">I use Python, Java and Javascript for the logic of a webpage or high level software needs.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-success pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6></h6>
+                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-success">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Expertise</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-success">2021 - Present</h6>
+                            <P>Software Developer Intern</P>
+                            <P class="subtitle">I had the opopertunity to intern at a small company in Ethiopia for 6 months</P>
+                            <hr>
+                            <h6 class="title text-success">2019- 2020</h6>
+                            <P>Restruant Manger</P>
+                            <P class="subtitle">I amanged a fast food restruant in Los Angeles, one of the bussiest place in LA while working on my second software certifications.</P>
+                            <hr>
+                            <h6 class="title text-success">2017 - 2019</h6>
+                            <P>Warehouse Suporvisor</P>
+                            <P class="subtitle">I manged a group of 15-20 workers on the outbound of UPS. I trained and keep workers safe by following procegers before and after work.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-success">2021 - Present</h6>
+                            <P class="bold">Java Appication Developer Certifications</P>
+                            <P>Student of B.E Computer Engineering</P>
+                            <P class="subtitle">I did a summer appericape with Infosys. Got a deeper understand of softwaer pericapels, We learned Java,SQL, React, SpringBoot, AWS, MangoDB, Postgers </P>
+                            <hr>
+                            <h6 class="title text-success">2019-2020</h6>
+                            <P class="bold">Django Fullstack Developer Certification</P>
+                            <P class="subtitle">Udemy coures teaching on the foundmental of fullstack development using Django, Javascript, CSS and HTML.</P>
+                            <P class="bold">Python Developer Certification</P>
+                            <P class="subtitle">A Zero to Mastery Udemy course on the foundementals of software development using Python.</P>
+                            <hr>
+                            <h6 class="title text-success">2016</h6>
+                            <P class="bold">High School Degree</P>
+                            <P class="subtitle">Gradeuated from Central Heights High School and enterd the world.</P>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>hTL5 &amp; CSS3</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>JavaScript</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 98%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Java</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>SQL</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>AWS</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Django</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>React</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>SpringBoot</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 88%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Amharic</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance / Software Development Work </h2>
+            <button class="btn bg-primary w-lg" >Hire me</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-success">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" class="active">
+                        New
+                    </a>
+                    <a href="#" data-filter=".advertising">
+                        Advertising
+                    </a>
+                    <a href="#" data-filter=".branding">
+                        Branding
+                    </a>
+                    <a href="#" data-filter=".web">
+                        Web
+                    </a>
+                </div>
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/web-1.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/web-1.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/web-2.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/web-2.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/advertising-2.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/advertising-2.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSTISING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>    
+                        </div>              
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/web-4.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/web-4.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 advertising"> 
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/advertising-1.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/advertising-1.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSITING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/web-3.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                           <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/web-3.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">WEB</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/advertising-3.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                           <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/advertising-3.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSITING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/advertising-4.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/advertising-4.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERTISING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>
+                                
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/branding-1.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/branding-1.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/branding-2.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/branding-2.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/branding-3.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/branding-3.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                    
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/branding-4.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/branding-4.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                      
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="{% static 'imgs/branding-5.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                            <div class="content-holder">
+                                <a class="img-popup" href="{% static 'imgs/branding-5.jpg' %}"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                </div>
+                            </div>
+                        </div>                                                   
+                    </div>
+                </div> 
+            </div>  
+        </div>            
+    </section>
+    <section class="bg-dark py-3 ">
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                    <h2 class="mb-5"><span class="text-success">Contact</span> Me!</h2>
+
+                        <form action="submit_form" method="post">
+                            {% csrf_token %}
+                            <p class="form-control">Name: {{ form.name }} </p>
+                            <p class="form-control">Email: {{ form.email }} </p>
+                            <p class="form-group">Message: {{ form.message }} </p>
+                            <a href="/thanks" class="btn btn-success push-right" >Send Message</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+251 (906)-646-214</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Jiga, Ethiopia</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">zele713@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="www.facebook.com"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="www.linkedin/zelalemsmith.com"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="www.instagram/zeleselam.com"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+    
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-success"></i> By <a href="http://devcrud.com" target="_blank"><span class="text-success" title="Bootstrap 4 Themes and Dashboards">Zele Smith</span></a> 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Isotope  -->
+    <script src="{% static 'vendors/isotope/isotope.pkgd.js' %}"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="{% static 'js/johndoe.js' %}"></script>
+
+</body>
+{% endblock %}
