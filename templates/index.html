@@ -4,20 +4,23 @@
 
 {% block content %}
 <body>
-   
     <section class="bg-dark py-5">
         <div class="container text-center text-white">
-            <div class="header-content ">
-                <h4 class="header-subtitle">Hello, I am</h4>
-                <h1 class="header-title text-success">Zelalem Smith</h1>
-                <h6 class="header-mono">A Fullstack Developer</h6>
-                <a href="#resume" class="btn btn-success btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</a>
+            <div class="header-content p-5 ">
+                <h1>
+                    <a href="" class="typewrite header-mono text-success" data-period="2000"
+                        data-type='[ "Hello, I am Zele Smith.", "I am a Fullstack Developer.", "I Love Sports", "and", "I Love Software Developing." ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+                <button onClick="window.print()" h class="btn btn-success btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
     </section>
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
+               
                 <h3 class="font-weight-light">Who am I ?</h3>
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Web Designer / Software Developer </h5>
@@ -74,7 +77,7 @@
     </div>
 
     <!--Resume Section-->
-    <section class="section" id="resume">
+    <section class="selction" id="my-section" id="resume">
         <div class="container">
             <h2 class="mb-5"><span class="text-success">My</span> Resume</h2>
             <div class="row">
@@ -200,10 +203,11 @@
             </div>
         </div>
     </section>
+    
     <section class="section bg-dark py-5">
         <div class="container text-center">
             <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance / Software Development Work </h2>
-            <button class="btn bg-primary w-lg" >Hire me</button>
+            <a href="#contact" class="btn bg-primary w-lg" >Hire me</a>
         </div>
     </section>
 
@@ -395,19 +399,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="contact-form-card">
+                    <div class="contact-form-card  ">
                     <h2 class="mb-5"><span class="text-success">Contact</span> Me!</h2>
 
-                        <form action="submit_form" method="post">
+                        <form  method="post">
+                           {{form.as_p}}
                             {% csrf_token %}
-                            <p class="form-control">Name: {{ form.name }} </p>
-                            <p class="form-control">Email: {{ form.email }} </p>
-                            <p class="form-group">Message: {{ form.message }} </p>
-                            <a href="/thanks" class="btn btn-success push-right" >Send Message</a>
+
+                            <input  class="btn btn-success push-right" type="submit" value="Send Message" >
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 my-form">
                     <div class="contact-info-card">
                         <h4 class="contact-title">Get in touch</h4>
                         <div class="row mb-2">
@@ -457,21 +460,6 @@
         </div>
     </footer>
 
-	<!-- core  -->
-    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
-    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
-
-    <!-- Isotope  -->
-    <script src="{% static 'vendors/isotope/isotope.pkgd.js' %}"></script>
-    
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
-    <script src="{% static 'js/johndoe.js' %}"></script>
 
 </body>
 {% endblock %}
